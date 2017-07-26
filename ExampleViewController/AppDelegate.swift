@@ -8,6 +8,30 @@
 
 import UIKit
 
+
+/////////////////////////////////////////////////////////////////
+/*
+ 
+ This is a view controller I put together for a client for an app that displays music events.
+ 
+ The main model is an event object which you can see more information on at the bottom of the file
+ 
+ Most of this VC is related to UI. The event model object already exists when the view is entered, the view's components just need to be displayed in the scrollview
+ 
+ A large part of this vc is using autolayout to display these ui elements - the autolayout was done a bit strangely because the client changed the desired order of the ui elements ALL THE TIME...fun.....
+ 
+ So the vc was done this way to make swapping around items a breeze
+ 
+ I don't use storyboard, all of my ui items and constraints are done programatically
+ 
+ I know there are easier ways to do constraints (I like easypeasy) but when I went to rewrite this VC I knew I needed a code sample so I didn't want to integrate too many libraries.
+ 
+ The app this is used for is in production so to see this in action go to
+ https://appsto.re/us/ewUKib.i to download
+ 
+ */
+/////////////////////////////////////////////////////////////////
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,7 +39,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let vc = ViewController()
+       
+        let win = UIWindow()
+        win.frame = UIScreen.main.bounds
+        win.makeKeyAndVisible()
+        window = win
+
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
         return true
     }
 
