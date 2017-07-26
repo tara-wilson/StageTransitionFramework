@@ -1,0 +1,27 @@
+PODS:
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - XCDYouTubeKit (2.5.5)
+
+DEPENDENCIES:
+  - SDWebImage
+  - XCDYouTubeKit (from `https://github.com/ML-Works/XCDYouTubeKit.git`, branch `feature/referer`)
+
+EXTERNAL SOURCES:
+  XCDYouTubeKit:
+    :branch: feature/referer
+    :git: https://github.com/ML-Works/XCDYouTubeKit.git
+
+CHECKOUT OPTIONS:
+  XCDYouTubeKit:
+    :commit: b78727aa4d4546d98c9e4105fbbb4f51033fe897
+    :git: https://github.com/ML-Works/XCDYouTubeKit.git
+
+SPEC CHECKSUMS:
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  XCDYouTubeKit: 86f4e7a9c2baa7b7adf6abfc28ac3ab34927be2d
+
+PODFILE CHECKSUM: 39bffdc156ea5f2872f7de56bfa4afbbf9aad2f1
+
+COCOAPODS: 1.0.1
