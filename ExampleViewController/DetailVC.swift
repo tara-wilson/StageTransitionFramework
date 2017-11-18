@@ -10,6 +10,7 @@
 import Foundation
 import UIKit
 import SDWebImage
+import StageTransition
 
 let padding: CGFloat = 20
 

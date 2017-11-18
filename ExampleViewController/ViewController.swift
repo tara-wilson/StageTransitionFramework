@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import StageTransition
 
 class ViewController: UIViewController {
     
@@ -31,11 +32,12 @@ class ViewController: UIViewController {
         
     }
     
-    func openView() {        
-        let imageone = UIImage(named: "interface-screenshot0-1.png")
-        let imagetwo = UIImage(named: "shareimage.png")
+    func openView() {
+        let bundle = Bundle(for: type(of: self))
+        let imageone = UIImage(named: "interface-screenshot0-1.png", in: bundle, compatibleWith: nil)
+        let imagetwo = UIImage(named: "shareimage.png", in: bundle, compatibleWith: nil)
         
-        let vc = DetailVC(image: startImageView.image!, frame: startImageView.frame)
+        let vc = DetailVC(image: startImageView.image ?? UIImage(), frame: startImageView.frame)
         vc.backgroundImage = imageone
         vc.shareImage = imagetwo
         present(vc, animated: false, completion: nil)

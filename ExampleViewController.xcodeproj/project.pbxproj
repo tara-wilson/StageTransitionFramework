@@ -15,13 +15,8 @@
 		DB19E3CE1F144B0C0056307A /* ExampleViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB19E3CD1F144B0C0056307A /* ExampleViewControllerTests.swift */; };
 		DB19E3D91F144B0C0056307A /* ExampleViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB19E3D81F144B0C0056307A /* ExampleViewControllerUITests.swift */; };
 		DB19E3E71F144B3E0056307A /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB19E3E61F144B3E0056307A /* DetailVC.swift */; };
-		DB19E3EB1F144D880056307A /* interface-screenshot0-1.png in Resources */ = {isa = PBXBuildFile; fileRef = DB19E3EA1F144D880056307A /* interface-screenshot0-1.png */; };
-		DB19E3F01F1452A40056307A /* close-button.png in Resources */ = {isa = PBXBuildFile; fileRef = DB19E3EE1F1452A40056307A /* close-button.png */; };
-		DB73C6A81F20444D00A71852 /* band7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DB73C6A71F20444D00A71852 /* band7.jpeg */; };
-		DB73C6AE1F204AA000A71852 /* Spotlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73C6AD1F204AA000A71852 /* Spotlight.swift */; };
-		DB73C6B81F20709900A71852 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73C6B71F20709900A71852 /* Extensions.swift */; };
-		DB73C6BA1F207D1C00A71852 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73C6B91F207D1C00A71852 /* Then.swift */; };
-		DB7914CA1F285632001F7545 /* stage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB7914C91F285632001F7545 /* stage.jpg */; };
+		DB307A5E1FC0B71E00B238CC /* StageTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB307A5B1FC0B71300B238CC /* StageTransition.framework */; };
+		DB307A5F1FC0B71E00B238CC /* StageTransition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DB307A5B1FC0B71300B238CC /* StageTransition.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +34,42 @@
 			remoteGlobalIDString = DB19E3B41F144B0B0056307A;
 			remoteInfo = ExampleViewController;
 		};
+		DB307A5A1FC0B71300B238CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB307A551FC0B71300B238CC /* StageTransition.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DBA94B711FC0AF3100308D83;
+			remoteInfo = StageTransition;
+		};
+		DB307A5C1FC0B71300B238CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB307A551FC0B71300B238CC /* StageTransition.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DBA94B7A1FC0AF3100308D83;
+			remoteInfo = StageTransitionTests;
+		};
+		DB307A601FC0B71E00B238CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB307A551FC0B71300B238CC /* StageTransition.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DBA94B701FC0AF3100308D83;
+			remoteInfo = StageTransition;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB307A541FC0B5C300B238CC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DB307A5F1FC0B71E00B238CC /* StageTransition.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A6BDA6C7CBD1FDDED7FAF645 /* Pods_ExampleViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,13 +88,7 @@
 		DB19E3D81F144B0C0056307A /* ExampleViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewControllerUITests.swift; sourceTree = "<group>"; };
 		DB19E3DA1F144B0C0056307A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB19E3E61F144B3E0056307A /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
-		DB19E3EA1F144D880056307A /* interface-screenshot0-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "interface-screenshot0-1.png"; sourceTree = "<group>"; };
-		DB19E3EE1F1452A40056307A /* close-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-button.png"; sourceTree = "<group>"; };
-		DB73C6A71F20444D00A71852 /* band7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = band7.jpeg; sourceTree = "<group>"; };
-		DB73C6AD1F204AA000A71852 /* Spotlight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spotlight.swift; sourceTree = "<group>"; };
-		DB73C6B71F20709900A71852 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		DB73C6B91F207D1C00A71852 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
-		DB7914C91F285632001F7545 /* stage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stage.jpg; sourceTree = "<group>"; };
+		DB307A551FC0B71300B238CC /* StageTransition.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StageTransition.xcodeproj; path = ../StageTransition/StageTransition.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB307A5E1FC0B71E00B238CC /* StageTransition.framework in Frameworks */,
 				680B09DC3B0D0AF4D8CDA9D3 /* Pods_ExampleViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +130,7 @@
 		DB19E3AC1F144B0B0056307A = {
 			isa = PBXGroup;
 			children = (
+				DB307A551FC0B71300B238CC /* StageTransition.xcodeproj */,
 				DB19E3B71F144B0B0056307A /* ExampleViewController */,
 				DB19E3CC1F144B0C0056307A /* ExampleViewControllerTests */,
 				DB19E3D71F144B0C0056307A /* ExampleViewControllerUITests */,
@@ -127,12 +153,10 @@
 		DB19E3B71F144B0B0056307A /* ExampleViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DB73C6B61F20561400A71852 /* Objects */,
-				DB73C6B51F20560200A71852 /* Images */,
+				DB73C6B51F20560200A71852 /* Helpers */,
 				DB19E3BA1F144B0B0056307A /* ViewController.swift */,
+				DB19E3B81F144B0B0056307A /* AppDelegate.swift */,
 				DB19E3E61F144B3E0056307A /* DetailVC.swift */,
-				DB73C6B71F20709900A71852 /* Extensions.swift */,
-				DB73C6B91F207D1C00A71852 /* Then.swift */,
 			);
 			path = ExampleViewController;
 			sourceTree = "<group>";
@@ -155,27 +179,23 @@
 			path = ExampleViewControllerUITests;
 			sourceTree = "<group>";
 		};
-		DB73C6B51F20560200A71852 /* Images */ = {
+		DB307A561FC0B71300B238CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB7914C91F285632001F7545 /* stage.jpg */,
+				DB307A5B1FC0B71300B238CC /* StageTransition.framework */,
+				DB307A5D1FC0B71300B238CC /* StageTransitionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB73C6B51F20560200A71852 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
 				DB19E3BF1F144B0B0056307A /* Assets.xcassets */,
 				DB19E3C11F144B0B0056307A /* LaunchScreen.storyboard */,
 				DB19E3C41F144B0B0056307A /* Info.plist */,
-				DB19E3EA1F144D880056307A /* interface-screenshot0-1.png */,
-				DB73C6A71F20444D00A71852 /* band7.jpeg */,
-				DB19E3EE1F1452A40056307A /* close-button.png */,
 			);
-			name = Images;
-			sourceTree = "<group>";
-		};
-		DB73C6B61F20561400A71852 /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				DB73C6AD1F204AA000A71852 /* Spotlight.swift */,
-				DB19E3B81F144B0B0056307A /* AppDelegate.swift */,
-			);
-			name = Objects;
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		F4342760E5440878FF7AF047 /* Frameworks */ = {
@@ -199,10 +219,12 @@
 				DB19E3B31F144B0B0056307A /* Resources */,
 				F0B506AC0794F42007EDAD98 /* [CP] Embed Pods Frameworks */,
 				8EE2327CFA86D4131871BBC1 /* [CP] Copy Pods Resources */,
+				DB307A541FC0B5C300B238CC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DB307A611FC0B71E00B238CC /* PBXTargetDependency */,
 			);
 			name = ExampleViewController;
 			productName = ExampleViewController;
@@ -285,6 +307,12 @@
 			mainGroup = DB19E3AC1F144B0B0056307A;
 			productRefGroup = DB19E3B61F144B0B0056307A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DB307A561FC0B71300B238CC /* Products */;
+					ProjectRef = DB307A551FC0B71300B238CC /* StageTransition.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DB19E3B41F144B0B0056307A /* ExampleViewController */,
@@ -294,17 +322,30 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		DB307A5B1FC0B71300B238CC /* StageTransition.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = StageTransition.framework;
+			remoteRef = DB307A5A1FC0B71300B238CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DB307A5D1FC0B71300B238CC /* StageTransitionTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = StageTransitionTests.xctest;
+			remoteRef = DB307A5C1FC0B71300B238CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		DB19E3B31F144B0B0056307A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB19E3F01F1452A40056307A /* close-button.png in Resources */,
 				DB19E3C31F144B0B0056307A /* LaunchScreen.storyboard in Resources */,
-				DB19E3EB1F144D880056307A /* interface-screenshot0-1.png in Resources */,
 				DB19E3C01F144B0B0056307A /* Assets.xcassets in Resources */,
-				DB7914CA1F285632001F7545 /* stage.jpg in Resources */,
-				DB73C6A81F20444D00A71852 /* band7.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,12 +418,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB73C6AE1F204AA000A71852 /* Spotlight.swift in Sources */,
 				DB19E3BB1F144B0B0056307A /* ViewController.swift in Sources */,
-				DB73C6BA1F207D1C00A71852 /* Then.swift in Sources */,
 				DB19E3B91F144B0B0056307A /* AppDelegate.swift in Sources */,
 				DB19E3E71F144B3E0056307A /* DetailVC.swift in Sources */,
-				DB73C6B81F20709900A71852 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +452,11 @@
 			isa = PBXTargetDependency;
 			target = DB19E3B41F144B0B0056307A /* ExampleViewController */;
 			targetProxy = DB19E3D51F144B0C0056307A /* PBXContainerItemProxy */;
+		};
+		DB307A611FC0B71E00B238CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StageTransition;
+			targetProxy = DB307A601FC0B71E00B238CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -526,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CF3AF95EAEF0854F2E943C6E /* Pods-ExampleViewController.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T8F23BFN6Q;
 				INFOPLIST_FILE = ExampleViewController/Info.plist;
@@ -540,6 +584,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABC7D87AF722E30408AA7433 /* Pods-ExampleViewController.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T8F23BFN6Q;
 				INFOPLIST_FILE = ExampleViewController/Info.plist;
