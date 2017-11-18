@@ -21,7 +21,8 @@ class ViewController: UIViewController {
         startImageView = UIImageView(frame: CGRect(x: 100, y: 90, width: view.frame.width - 200, height: view.frame.width - 120))
         startImageView.contentMode = .scaleAspectFill
         startImageView.clipsToBounds = true
-        startImageView.image = UIImage(named: "band7.jpeg")
+        let bundle = Bundle(for: type(of: self))
+        startImageView.image = UIImage(named: "band7.jpg", in: bundle, compatibleWith: nil)
         view.addSubview(startImageView)
         
         let goButton = UIButton(frame: CGRect(x: 50, y: view.frame.width + 20, width: view.frame.width - 100, height: 100))
@@ -33,13 +34,7 @@ class ViewController: UIViewController {
     }
     
     func openView() {
-        let bundle = Bundle(for: type(of: self))
-        let imageone = UIImage(named: "interface-screenshot0-1.png", in: bundle, compatibleWith: nil)
-        let imagetwo = UIImage(named: "shareimage.png", in: bundle, compatibleWith: nil)
-        
         let vc = DetailVC(image: startImageView.image ?? UIImage(), frame: startImageView.frame)
-        vc.backgroundImage = imageone
-        vc.shareImage = imagetwo
         present(vc, animated: false, completion: nil)
     }
 

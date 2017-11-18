@@ -17,7 +17,6 @@ let padding: CGFloat = 20
 class DetailVC: UIViewController {
     
     var backgroundImage: UIImage?
-    var shareImage: UIImage?
     
     var spotlightView: (UIView?, CAShapeLayer?)
     var spotlightViewTwo: (UIView?, CAShapeLayer?)
