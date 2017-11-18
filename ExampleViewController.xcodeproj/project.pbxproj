@@ -17,6 +17,9 @@
 		DB19E3E71F144B3E0056307A /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB19E3E61F144B3E0056307A /* DetailVC.swift */; };
 		DB307A5E1FC0B71E00B238CC /* StageTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB307A5B1FC0B71300B238CC /* StageTransition.framework */; };
 		DB307A5F1FC0B71E00B238CC /* StageTransition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DB307A5B1FC0B71300B238CC /* StageTransition.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DB307A6E1FC0CBF800B238CC /* close-button.png in Resources */ = {isa = PBXBuildFile; fileRef = DB307A6B1FC0CBF800B238CC /* close-button.png */; };
+		DB307A6F1FC0CBF800B238CC /* stage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB307A6C1FC0CBF800B238CC /* stage.jpg */; };
+		DB307A701FC0CBF800B238CC /* band7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB307A6D1FC0CBF800B238CC /* band7.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		DB19E3DA1F144B0C0056307A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB19E3E61F144B3E0056307A /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		DB307A551FC0B71300B238CC /* StageTransition.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StageTransition.xcodeproj; path = ../StageTransition/StageTransition.xcodeproj; sourceTree = "<group>"; };
+		DB307A6B1FC0CBF800B238CC /* close-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-button.png"; sourceTree = "<group>"; };
+		DB307A6C1FC0CBF800B238CC /* stage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stage.jpg; sourceTree = "<group>"; };
+		DB307A6D1FC0CBF800B238CC /* band7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = band7.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +197,9 @@
 		DB73C6B51F20560200A71852 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				DB307A6B1FC0CBF800B238CC /* close-button.png */,
+				DB307A6C1FC0CBF800B238CC /* stage.jpg */,
+				DB307A6D1FC0CBF800B238CC /* band7.jpg */,
 				DB19E3BF1F144B0B0056307A /* Assets.xcassets */,
 				DB19E3C11F144B0B0056307A /* LaunchScreen.storyboard */,
 				DB19E3C41F144B0B0056307A /* Info.plist */,
@@ -344,8 +353,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB307A6F1FC0CBF800B238CC /* stage.jpg in Resources */,
 				DB19E3C31F144B0B0056307A /* LaunchScreen.storyboard in Resources */,
 				DB19E3C01F144B0B0056307A /* Assets.xcassets in Resources */,
+				DB307A6E1FC0CBF800B238CC /* close-button.png in Resources */,
+				DB307A701FC0CBF800B238CC /* band7.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
